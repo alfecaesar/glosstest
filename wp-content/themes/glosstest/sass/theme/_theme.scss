@@ -1,0 +1,467 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+body{
+    font-family: $primary_font;
+    background-color: $white_color;
+}
+
+.btn{
+    font-family: $primary_font;
+    color: $white_color;  
+    background-color: $button_bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    -webkit-border-radius: $border_radius;
+    -moz-border-radius: $border_radius;
+    border-radius: $border_radius;
+    -webkit-transition: $all_transition;
+    -moz-transition: $all_transition;
+    -ms-transition: $all_transition;
+    -o-transition: $all_transition;
+    transition: $all_transition; 
+
+    &:hover{
+        color: $white_color;  
+        opacity: 0.8;
+    }
+}
+
+#wrapper-navbar{
+
+    .container{
+        max-width: 1298px;
+    }
+}
+
+#main-nav{
+    background-color: $white_color !important;
+    padding-bottom: 0px;
+    padding-top: 30px;
+
+    .container{
+        position: relative;
+        -webkit-box-align: start !important;
+        -webkit-align-items: start !important;
+        -moz-box-align: start !important;
+        -ms-flex-align: start !important;
+
+        .social-icons{
+            position: absolute;
+            top: -20px;
+            right: 15px;
+        }
+
+        .social-icons a{
+            font-size: 18px;
+            color: $red_color; 
+            display: inline-block;
+            margin-left: 15px;
+        }
+    }
+
+    
+
+    .navbar-brand{
+        color: $black_color;
+        font-family: $primary_font;
+        font-size: 35px;
+        line-height: 41px;
+        font-weight: 700;
+        padding: 0px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+    }
+
+    @media (min-width: 768px) {
+
+        ul#main-menu{
+
+            li.menu-item{
+
+
+                a.nav-link{
+                    color: $grey_color;
+                    font-family: $primary_font;
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-weight: 400;
+                    padding:30px 15px;
+                }
+            }
+
+            li.menu-item.current-menu-item{
+                border-bottom: 2px solid $red_color;
+
+                a.nav-link{
+                    color: $black_color;
+                }
+            }
+
+            li.menu-item:hover{
+                border-bottom: 2px solid $red_color;
+
+                a.nav-link{
+                    color: $black_color;
+                }
+            }
+
+            li.menu-item.menu-btn{
+                border-bottom: none;
+                padding-top: 15px;
+                margin-left: 15px;
+
+                a.nav-link{
+                    border: 2px solid $red_color;
+                    padding: 13px 50px; 
+                    -webkit-border-radius: $border_radius;
+                    -moz-border-radius: $border_radius;
+                    border-radius: $border_radius;
+                    font-family: $primary_font;
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-weight: 500;
+                    color: $red_color;
+                    display: inline-block;
+
+                    &:hover{
+                        color: $red_color;
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    @media (max-width: 767px) {
+        padding-bottom: 15px;
+        padding-top: 15px;
+
+        .container{
+            .social-icons{
+                top: 8px;
+                right: 75px; 
+            } 
+        }
+    }
+
+    .navbar-toggler{
+        color: $black_color;
+        border-color: $black_color;
+    }
+}
+
+#bannerarea{
+    padding: 0px;
+    min-height: 641px;
+    background-position: center center;
+
+    .container{
+        padding-top: 170px;
+        padding-bottom: 150px;
+        max-width: 1298px;
+
+        h1{
+            font-family: $primary_font;
+            color: $white_color;
+            font-size: 64px;
+            line-height: 75px;
+            font-weight: 500;
+            margin-bottom: 45px;
+        }
+
+        p{
+            font-family: $primary_font;
+            color: $white_color;
+            font-size: 25px;
+            line-height: 29px;
+            font-weight: 300;
+            max-width: 579px;
+            margin-bottom: 45px;
+        }
+
+        a{
+            width: 620px;
+            height: 94px;
+            font-size: 30px;
+            line-height: 35px;
+            font-weight: 700;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        min-height: auto;
+
+        .container{
+            padding-top: 80px;
+            padding-bottom: 80px;
+
+            h1, p{
+                text-align: center;
+                max-width: none;
+                display: inline-block;
+                width: 100%;
+            }
+            a.btn{
+                margin: 0 auto;
+                width: auto; 
+                max-width: 320px;
+            }
+            h1{
+                font-size: 50px;
+                line-height: 61px;
+            }
+        }
+    }
+} 
+
+#firstsection{
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    .container{
+        max-width: 1298px;
+
+        .fs-content-text{
+            padding-top: 45px; 
+        }
+
+        h2{
+            font-family: $primary_font;
+            color: $black_color;
+            font-size: 30px;
+            line-height: 35px;
+            font-weight: 500;
+            margin: 0 0 40px 0;
+        }
+
+        p{
+            font-family: $primary_font;
+            color: $grey_color;
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 400;
+            margin: 0 0 40px 0;
+        }
+
+        a.btn{
+            display: inline-block;
+            padding: 20px 60px;
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 400;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .container{
+            .fs-content-text{
+                padding-top: 0px; 
+                text-align: center;
+            }
+        }
+    }
+}
+
+#secondsection{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: $dark_bg;
+    background-repeat: no-repeat;
+    background-position: right -20px top 0px;
+    min-height: 560px;
+
+    .container{
+        max-width: 1298px;
+
+        .sc-content-text{
+            padding-top: 105px;
+        }
+
+        h2{
+            font-family: $primary_font;
+            color: $white_color;
+            font-size: 40px;
+            line-height: 47px;
+            font-weight: 500;
+            margin: 0 0 50px 0;
+        }
+
+        p{
+            font-family: $primary_font;
+            color: $grey_color;
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 400;
+            margin: 0 0 60px 0;
+        }
+
+        a.btn{
+            display: inline-block;
+            padding: 20px 60px;
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 400;
+        }
+
+        .sc-content-img{
+            display: none;
+            padding-top: 20px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        background-image: none !important;
+        min-height:  auto; 
+
+        .container{
+            padding-top: 40px; 
+            padding-bottom: 40px; 
+
+            .sc-content-text{
+                padding-top: 0px; 
+                text-align: center; 
+            }
+
+            .sc-content-img{
+                display: block;
+            }
+        }
+    }
+}
+
+#thirdsection{
+    padding-top: 80px;
+    padding-bottom: 70px;
+
+    .container{
+        max-width: 1298px;
+
+        h2{
+            font-family: $primary_font;
+            color: $black_color;
+            font-size: 40px;
+            line-height: 25px;
+            font-weight: 500;
+            margin: 0 0 30px 0;
+        }
+
+        p{
+            font-family: $primary_font;
+            color: $grey_color;
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 400;
+            margin: 0 0 60px 0;
+        }
+
+        .team-photo{
+            margin-bottom: 25px;
+        }
+
+        h3{
+            font-family: $primary_font;
+            color: $black_color;
+            font-size: 25px;
+            line-height: 25px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        p.position{
+            font-family: $primary_font;
+            color: $grey_color;
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 400;
+            margin: 0 0 0px 0;
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .container{
+            .team-photo{
+                margin-bottom: 10px;
+            }
+            p.position{
+                margin-bottom: 25px;
+            }
+        }
+
+    }
+}
+
+#footerBar{
+    background-color: $red_color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .container{
+        max-width: 1320px;
+
+        .footerbar-text{
+            font-family: $primary_font;
+            color: $white_color;
+            font-size: 30px;
+            line-height: 70px;
+            font-weight: 500;    
+        }
+    
+        a.btn{
+            border-color: $white_color;
+            border-width: 2px;
+            font-size: 25px;
+            line-height: 25px;
+            font-family: $primary_font;
+            color: $white_color;
+            padding: 20px 50px;
+            display: inline-block;
+        }
+
+    }
+
+    @media (max-width: 1024px) {
+        
+    }
+
+    @media (max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .container{
+            
+            .footerbar-text{
+                line-height: 35px;
+                text-align: center !important;
+                margin-bottom: 20px;
+            }
+
+            .footerbar-btn{
+                text-align: center !important;
+            }
+        }
+    }
+
+}
+
+#wrapper-footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .site-info{
+        font-family: $primary_font;
+        color: $grey_color;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 400;   
+        letter-spacing: 0;
+    }
+}
